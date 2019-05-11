@@ -37,7 +37,7 @@ header h1 {
 main {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
   margin: auto;
   width: 80vw;
