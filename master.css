@@ -39,6 +39,7 @@ main {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: stretch;
+  align-content: flex-start;
   margin: auto;
   width: 80vw;
 }
