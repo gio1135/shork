@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto:100');
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto';
+  transition-duration: 0.3s;
+}
+a {
+  text-decoration: none;
+  color: rgb(1, 135, 134);
+}
+
+body {
+  background-image: url('images/dust-scratches.png');
+}
+
+header {
+  display: block;
+  margin-bottom: -12.5vh;
+  height: 50vh;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1));
+}
+header h1 {
+  display: inline-block;
+  margin: 25vh 0 0 20vw;
+  font-family: 'Roboto';
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  transform: translateY(-50%);
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: auto;
+  width: 80vw;
+}
+
+.card {
+  flex: auto;
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0 33px 33px 0;
+  border-radius: 4px;
+  padding-bottom: 52px;
+  max-width: 350px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+.primary img {
+  display: block;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+}
+.primary .header {
+  padding: 1rem;
+  font-weight: 500;
+}
+.primary .header h2 {
+  margin: 0;
+  line-height: 2rem;
+  font-size: 1.25rem;
+}
+.primary .header h3 {
+  margin: 0;
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+.primary .info {
+  padding: 0 1rem 8px;
+  line-height: 1.25rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+.primar .info object {
+  min-height: 10rem;
+}
+.actions {
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+  min-height: 52px;
+}
+.actions a {
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 4px;
+  padding: 0 8px;
+  min-width: 64px;
+  height: 36px;
+  line-height: 36px;
+  text-decoration: none;
+  font-weight: 500;
+  background-position: center;
+  transition: background 0.8s;
+}
+.actions a:hover {
+  background: rgba(1, 135, 134, 0.3) radial-gradient(circle, transparent 1%, rgba(1, 135, 134, 0.1) 1%) center/15000%;
+}
+.actions a:active {
+  background-color: rgba(1, 135, 134, 0.3);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.fab1 {
+  display: inline-block;
+  position: fixed;
+  bottom: 33px;
+  right: 33px;
+  border-radius: 24px;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(1, 135, 134);
+  box-shadow: 0 3px 5px -1px rgba(0, 0 ,0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
