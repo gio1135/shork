@@ -43,18 +43,25 @@ main {
   width: 80vw;
 }
 
-.column{
+.column {
   flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-self: flex-start;
+  justify-content: space-evenly;
 }
 
 .card {
   flex: 1;
+  align-self: flex-start;
   display: block;
   position: relative;
   overflow: hidden;
   margin: 1rem;
   border-radius: 4px;
-  padding-bottom: 52px;
+  padding-bottom: 60px;
+  min-width: 15rem;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
     0 3px 4px 0 rgba(0, 0, 0, 0.14),
@@ -64,7 +71,7 @@ main {
   height: 50rem;
 }
 .discord object {
-  height: 29rem;
+  height: 30rem;
   width: 100%;
 }
 .primary img {
@@ -94,7 +101,7 @@ main {
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.54);
 }
-.primar .info object {
+.primary .info object {
   min-height: 10rem;
 }
 .actions {
